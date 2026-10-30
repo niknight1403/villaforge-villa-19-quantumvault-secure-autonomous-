@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "checks": {
+    "environment": "python3 -c 'import fastapi; import uvicorn; import pydantic; import httpx'",
+    "build": "python3 -m compileall .",
+    "test": "python3 run_tests.py",
+    "smoke": "python3 -c 'from src.main import app; print("App loaded successfully")'"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "quantumvault-ai",
+  "version": "1.0.0",
+  "description": "QuantumVault AI Enterprise Platform",
+  "main": "src/main.py",
+  "scripts": {
+    "build": "python3 -m py_compile src/main.py",
+    "test": "python3 -m unittest discover -s tests",
+    "smoke": "python3 src/main.py --smoke"
+  },
+  "dependencies": {}
+}
