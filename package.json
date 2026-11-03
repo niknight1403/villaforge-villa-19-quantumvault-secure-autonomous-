@@ -1,13 +1,1 @@
-{
-  "name": "quantum-vault-ai",
-  "version": "0.1.0",
-  "description": "Zero-Knowledge Enterprise Platform",
-  "main": "index.js",
-  "scripts": {
-    "build": "echo 'Building QuantumVault Core...' && mkdir -p dist",
-    "test": "echo 'Running Security Audit Tests...' && exit 0",
-    "smoke": "echo 'Smoke test: Verifying ZK-Storage connectivity...' && exit 0"
-  },
-  "dependencies": {},
-  "devDependencies": {}
-}
+[object Object]
