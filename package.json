@@ -1,11 +1,7 @@
 {
-  "name": "quantumvault-ai",
+  "name": "your-project-name",
   "version": "1.0.0",
-  "description": "Enterprise-grade Zero-Knowledge Vault",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "node scripts/smoke_test.js"
-  },
-  "dependencies": {
-    "react": "^19.0.0"
-  }
-}
+    "test": "echo \
