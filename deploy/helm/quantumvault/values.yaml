@@ -1,0 +1,22 @@
+replicaCount: 1
+image:
+  repository: quantumvault/core
+  pullPolicy: IfNotPresent
+  tag: "latest"
+service:
+  type: ClusterIP
+  port: 80
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  hosts:
+    - host: quantumvault.example.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+tls:
+  - secretName: quantumvault-tls
+    hosts:
+      - quantumvault.example.com
