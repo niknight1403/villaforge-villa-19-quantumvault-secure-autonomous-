@@ -1,7 +1,12 @@
 {
-  "name": "my-project",
+  "name": "villa19-quantumvault",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "QuantumVault: Zero-Knowledge-Storage. Pruefkette ohne externe Abhaengigkeiten.",
   "scripts": {
-    "test": "echo \
+    "build": "node scripts/build-check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "start": "node scripts/smoke.mjs"
+  }
+}
