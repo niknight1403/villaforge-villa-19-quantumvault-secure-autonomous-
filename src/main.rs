@@ -1,4 +1,5 @@
-// Ein einfacher Rust-Programm
+// src/main.rs
+
 fn main() {
-    println!("Hallo, Welt!");
+    println!("Hello, world!");
 }
