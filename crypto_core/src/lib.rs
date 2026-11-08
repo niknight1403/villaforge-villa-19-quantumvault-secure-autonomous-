@@ -14,7 +14,11 @@ impl CryptoEngine {
 
     pub fn encrypt(&self, data: &[u8]) -> Vec<u8> {
         let cipher = Aes256Gcm::new(Key::<Aes256Gcm>::from_slice(&self.key));
-        let nonce = [0u8; 12]; // In production, use random nonce
-        cipher.encrypt(aes_gcm::Nonce::from_slice(&nonce), data).expect("encryption failed")
+        let mut nonce = [0u8; 12];
+        OsRng.fill_bytes(&mut nonce);
+        let mut ciphertext = cipher.encrypt(aes_gcm::Nonce::from_slice(&nonce), data).expect("encryption failed");
+        let mut result = nonce.to_vec();
+        result.append(&mut ciphertext);
+        result
     }
 }
