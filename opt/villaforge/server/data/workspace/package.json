@@ -1,12 +1,13 @@
 {
   "name": "villaforge",
   "version": "1.0.0",
-  "description": "A project for VillaForge",
+  "description": "A project for the Villa AI platform",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
   }
 }
