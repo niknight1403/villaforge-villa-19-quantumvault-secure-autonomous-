@@ -1,17 +1,1 @@
-{
-  "name": "QuantumVaultAI",
-  "version": "1.0.0",
-  "description": "Quantum Vault AI Project",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "jest"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "axios": "^0.21.1"
-  },
-  "devDependencies": {
-    "jest": "^27.0.6"
-  }
-}
+[object Object]
