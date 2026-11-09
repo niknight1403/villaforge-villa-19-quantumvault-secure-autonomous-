@@ -1,1 +1,14 @@
-{"name": "villaforge", "version": "1.0.0", "description": "A smart home automation system", "main": "index.js", "scripts": {"start": "node index.js"}, "dependencies": {"express": "^4.17.1"}}
+{
+  "name": "villaforge",
+  "version": "1.0.0",
+  "description": "A smart home automation system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mqtt": "^4.2.1"
+  }
+}
