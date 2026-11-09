@@ -1,7 +1,1 @@
-{
-  "name": "my-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \
+{"name":"villa-project","version":"1.0.0","description":"A project for the Villa platform","main":"index.js","scripts":{"test":"jest"},"keywords":[],"author":"Your Name","license":"ISC"}
