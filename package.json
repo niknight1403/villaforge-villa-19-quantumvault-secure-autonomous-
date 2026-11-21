@@ -1,20 +1,14 @@
 {
   "name": "quantumvault-ai",
   "version": "0.1.0",
-  "description": "QuantumVault AI – sichere Plattform für Agentenkommunikation",
-  "main": "src/main.py",
+  "description": "QuantumVault AI – hochsichere Plattform",
+  "main": "src/main.js",
   "scripts": {
-    "build": "python -m compileall src",
-    "test": "pytest tests",
-    "smoke": "python -m unittest discover -s tests -p '*_smoke.py'"
+    "build": "echo 'Build: no-op for JS'",
+    "test": "node tests/run.mjs",
+    "smoke": "node tests/smoke.mjs"
   },
-  "dependencies": {
-    "fastapi": "^0.111.0",
-    "uvicorn": "^0.30.0",
-    "stripe": "^9.0.0"
-  },
-  "devDependencies": {
-    "pytest": "^8.3.0",
-    "coverage": "^7.5.0"
-  }
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {}
 }
